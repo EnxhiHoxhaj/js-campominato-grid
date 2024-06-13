@@ -1,12 +1,19 @@
 ////gestione del clicK che genererà la griglia
 // richiamo il contenitore dal DOM
 let campoMinato = document.querySelector(".campo");
+let generateCampo = document.querySelector("button");
+
+generateCampo.addEventListener ("click",
+    function(){
+        for (i = 0; i <= 99; i++) {
+            let bombSquare = `<div class="square"></div>`;
+            campoMinato.innerHTML += bombSquare;
+            console.log(bombSquare);
+        }
+    }
+)
 //tramite un ciclo che mi  genera 100 caselle
-for (i = 0; i <= 99; i++) {
-    let bombSquare = `<div class="square"></div>`
-    campoMinato.innerHTML += bombSquare;
-    console.log(bombSquare);
-}
+
 //for (i= 0 , 1 <= 99; i++) {}
     //tramite un ciclo genero un array di numeri
     // tramite un ciclo inserisco i numeri neglle caselle in modo progressivo da 1 a 100

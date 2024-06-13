@@ -38,6 +38,10 @@
     display: none;
 }
 
+.show_element {
+    display: block;
+}
+
 /*quadrati di gioco*/
 
 .square {
@@ -90,7 +94,7 @@ button {
     font-size: 20px;
     background-color: #24252b;
     color: whitesmoke;
-    
+
     border-radius: 20px;
     border: none;
     cursor: pointer;
