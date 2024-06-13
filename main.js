@@ -4,7 +4,7 @@ let introductioGame = document.querySelector(".intro_play")
 let generateCampo = document.querySelector("button");
 //gestione del clicK che genererà la griglia
 generateCampo.addEventListener ("click",
-    function(){
+    function(){ //tramite un ciclo che mi  genera 100 caselle
         for (i = 0; i <= 99; i++) {
             let bombSquare = `<div class="square"></div>`;
             campoMinato.innerHTML += bombSquare;
@@ -15,7 +15,6 @@ generateCampo.addEventListener ("click",
     }
     
 )
-//tramite un ciclo che mi  genera 100 caselle
 
 //for (i= 0 , 1 <= 99; i++) {}
     //tramite un ciclo genero un array di numeri
