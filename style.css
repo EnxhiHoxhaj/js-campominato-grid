@@ -3,9 +3,32 @@
     padding: 0;
     box-sizing: border-box;
 }
+ /*stile per dei contenitori*/
 
 .game_page{
     width: 100vw;
     height: 100vh;
     background-color: #94d1b8;
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    width: 800px;
+    height: 700px;
+    border: solid gray;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.campo {
+    width: 600px;
+    height: 600px;
+    border: solid gray;
+    margin: auto;
+}
+
+.hidden {
+    display: none;
 }
