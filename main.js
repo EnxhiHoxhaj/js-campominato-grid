@@ -1,8 +1,7 @@
-////gestione del clicK che genererà la griglia
 // richiamo il contenitore dal DOM
 let campoMinato = document.querySelector(".campo");
 let generateCampo = document.querySelector("button");
-
+//gestione del clicK che genererà la griglia
 generateCampo.addEventListener ("click",
     function(){
         for (i = 0; i <= 99; i++) {
@@ -10,7 +9,9 @@ generateCampo.addEventListener ("click",
             campoMinato.innerHTML += bombSquare;
             console.log(bombSquare);
         }
+        campoMinato.classList.add("show_element");
     }
+    
 )
 //tramite un ciclo che mi  genera 100 caselle
 

@@ -39,7 +39,7 @@
 }
 
 .show_element {
-    display: block;
+    display: flex;
 }
 
 /*quadrati di gioco*/
