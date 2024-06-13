@@ -1,5 +1,13 @@
 ////gestione del clicK che genererà la griglia
-    //tramite un ciclo che mi  genera 100 caselle
+// richiamo il contenitore dal DOM
+let campoMinato = document.querySelector(".campo");
+//tramite un ciclo che mi  genera 100 caselle
+for (i = 0; i <= 99; i++) {
+    let bombSquare = `<div class="square"></div>`
+    campoMinato.innerHTML += bombSquare;
+    console.log(bombSquare);
+}
+//for (i= 0 , 1 <= 99; i++) {}
     //tramite un ciclo genero un array di numeri
     // tramite un ciclo inserisco i numeri neglle caselle in modo progressivo da 1 a 100
     // creo una classe per nascondere nascondere i numeri
