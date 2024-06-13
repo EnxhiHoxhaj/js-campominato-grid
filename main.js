@@ -1,5 +1,6 @@
 // richiamo il contenitore dal DOM
 let campoMinato = document.querySelector(".campo");
+let introductioGame = document.querySelector(".intro_play")
 let generateCampo = document.querySelector("button");
 //gestione del clicK che genererà la griglia
 generateCampo.addEventListener ("click",
@@ -10,6 +11,7 @@ generateCampo.addEventListener ("click",
             console.log(bombSquare);
         }
         campoMinato.classList.add("show_element");
+        introductioGame.classList.add("hidden");
     }
     
 )
