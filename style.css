@@ -16,7 +16,8 @@
 .container{
     width: 800px;
     height: 700px;
-    border: solid gray;
+    border: solid #24252b;
+    border-radius: 5px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -24,12 +25,13 @@
 }
 
 .campo {
-    width: 600px;
-    height: 600px;
+    width: 604px;
+    height: 604px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    box-sizing: border-box;
+    border: solid #24252b 2px;
+
 }
 
 .hidden {
@@ -40,7 +42,7 @@
 
 .square {
     width: calc(600px / 10);
-    border: solid gray 0.1px;
+    border: solid #24252b 0.1px;
     background-color: #d5b79f;
     cursor: pointer;
 }
@@ -48,3 +50,48 @@
 .sky_blu {
     background-color: #a2cffe;
 }
+
+/* assegnazione style agli elementi di testo*/
+
+.title > h1{
+    font-family: "Rubik Bubbles", system-ui;
+    display: inline-block;
+    text-align: center;
+    margin: 20px 15px 0;
+    color:#24252b;
+}
+
+.title .fa-solid {
+    font-size: 25px;
+    color:#24252b;
+}
+.intro_play {
+    width: 90%;
+    margin-top: 20px;
+    font-family: sans-serif;
+    line-height: 25px;
+    position: relative;
+}
+h4 {
+   margin: 20px 0 8px;
+}
+
+ul > li {
+   list-style-position: inside;
+}
+
+button {
+    margin: 80px auto;
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 0;
+    font-size: 20px;
+    background-color: #24252b;
+    color: whitesmoke;
+    border-radius: 20px;
+    border: none;
+
+}
+
