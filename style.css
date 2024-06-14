@@ -51,12 +51,10 @@
     /*color: #d5b79f;*/
     cursor: pointer;
     text-align: center;
+
 }
 
-.sky_blu {
-    background-color: #a2cffe;
-    color: #24252b;
-}
+
 
 /* assegnazione style agli elementi di testo*/
 
@@ -102,3 +100,6 @@ button {
     cursor: pointer;
 }
 
+.sky_blu {
+    background-color: #a2cffe;
+}

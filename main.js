@@ -5,24 +5,37 @@ let introductioGame = document.querySelector (".intro_play")
 //gestione del clicK che genererà la griglia
 generateCampo.addEventListener ("click",
     function(){ //tramite un ciclo che mi  genera 100 caselle
-        for (i = 1; i <= 100; i++) {
+        for (let i = 1; i <= 100; i++) {
 
             //creiamo i div rappresenta<nti le caselle
-            const bombSquare = document.createElement("div");
+            let bombSquare = document.createElement("div");
 
             // assegnamo la classe "square" e "show_element"
+
             bombSquare.classList.add("square");
 
-            // assegno la classe "show_element" al container delle caselle
-            campoMinato.classList.add("show_element");
-            campoMinato.append(bombSquare);
-            // assegnamo a l'elemento introduzioneGioco e al bottone la classe "hidden"
-            introductioGame.classList.add("hidden");
-            generateCampo.classList.add("hidden")
-            //assegnamo un numero ad ogni casella e stampiamo in pagina il numero
-            
-            // creare un click sulle caselle
+            // aggiungere i numeri alle caselle
+            bombSquare.innerHTML = i;
 
+            // assegno la classe "show_element" al container delle caselle
+
+            campoMinato.classList.add("show_element");
+
+            // assegnamo a l'elemento introduzioneGioco e al bottone la classe "hidden"
+
+            introductioGame.classList.add("hidden");
+
+            generateCampo.classList.add("hidden");
+
+            campoMinato.append(bombSquare);
+
+            // creare un click sulle caselle
+            bombSquare.addEventListener("click",
+                function () {
+                    bombSquare.classList.add("sky_blu");
+                    console.log(i);
+                }
+            )
             // se cliccate prendono la classe "sky_blu"
 
             // stampare in console il numero
@@ -30,19 +43,3 @@ generateCampo.addEventListener ("click",
         }
     }
 )
-
-
-
-
-            /*campoMinato.innerHTML += bombSquare;
-            campoMinato.classList.add("show_element");
-            introductioGame.classList.add("hidden");
-            generateCampo.classList.add("hidden");
-
-            // gestione delle evento click al click di ogni singola casella essa si colora di azzurro
-            bombSquare.addEventListener ("click",
-                function() { //colorare le caselle di azzurro e stampa in console il numero
-                    bombSquare.classList.toggle("sky_blu");
-                    console.log(i);
-                }
-            )*/
