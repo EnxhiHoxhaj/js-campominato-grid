@@ -7,8 +7,11 @@ generateCampo.addEventListener ("click",
         let bombSquare;
         for (i = 1; i <= 100; i++) {
             let number = i;
-            let bombSquare = `<div class="square"> ${number}</div>`;
-            campoMinato.innerHTML = bombSquare;
+            const bombSquare = document.createElement("div");
+
+
+            
+            /*campoMinato.innerHTML += bombSquare;
             campoMinato.classList.add("show_element");
             introductioGame.classList.add("hidden");
             generateCampo.classList.add("hidden");
