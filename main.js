@@ -5,20 +5,22 @@ let introductioGame = document.querySelector (".intro_play")
 //gestione del clicK che genererà la griglia
 generateCampo.addEventListener ("click",
     function(){ //tramite un ciclo che mi  genera 100 caselle
-        for (i = 1; i < 100; i++) {
+        for (i = 1; i <= 100; i++) {
 
             //creiamo i div rappresenta<nti le caselle
             const bombSquare = document.createElement("div");
 
             // assegnamo la classe "square" e "show_element"
-            bombSquare.classList.add("square", "show_element")
+            bombSquare.classList.add("square");
 
             // assegno la classe "show_element" al container delle caselle
-            campoMinato.classList.add("show_element")
+            campoMinato.classList.add("show_element");
+            campoMinato.append(bombSquare);
             // assegnamo a l'elemento introduzioneGioco e al bottone la classe "hidden"
-            
+            introductioGame.classList.add("hidden");
+            generateCampo.classList.add("hidden")
             //assegnamo un numero ad ogni casella e stampiamo in pagina il numero
-            campoMinato.append(bombSquare)
+            
             // creare un click sulle caselle
 
             // se cliccate prendono la classe "sky_blu"
