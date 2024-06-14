@@ -11,7 +11,10 @@ generateCampo.addEventListener ("click",
             const bombSquare = document.createElement("div");
 
             // assegnamo la classe "square" e "show_element"
-            bombSquare.classList.add("square")
+            bombSquare.classList.add("square", "show_element")
+
+            // assegno la classe "show_element" al container delle caselle
+            campoMinato.classList.add("show_element")
             // assegnamo a l'elemento introduzioneGioco e al bottone la classe "hidden"
             
             //assegnamo un numero ad ogni casella e stampiamo in pagina il numero
