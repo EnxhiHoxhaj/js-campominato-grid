@@ -85,7 +85,7 @@ ul > li {
 }
 
 button {
-    margin: 80px auto;
+    margin: 350px auto 0;
     width: 400px;
     position: absolute;
     left: 50%;
@@ -94,7 +94,6 @@ button {
     font-size: 20px;
     background-color: #24252b;
     color: whitesmoke;
-
     border-radius: 20px;
     border: none;
     cursor: pointer;
