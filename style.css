@@ -48,11 +48,14 @@
     width: calc(600px / 10);
     border: solid #24252b 0.1px;
     background-color: #d5b79f;
+    /*color: #d5b79f;*/
     cursor: pointer;
+    text-align: center;
 }
 
 .sky_blu {
     background-color: #a2cffe;
+    color: #24252b;
 }
 
 /* assegnazione style agli elementi di testo*/
@@ -62,7 +65,7 @@
     display: inline-block;
     text-align: center;
     margin: 20px 15px 0;
-    color:#24252b;
+    /*color:#24252b;*/
 }
 
 .title .fa-solid {
